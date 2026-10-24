@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mecánica labs: nueva dirección</title>
+<link rel="canonical" href="https://kairi99.github.io/mecanica-labs/mruv/">
+<script>
+  // The MRUV lab moved to /mecanica-labs/ (now a multi-experiment lab). Keep the query (?lang=, ?tour=, ...) and hash.
+  (function () {
+    var rest = location.pathname.replace(/^\/digicart-mruv-sim/, '')
+    var to = /^\/help(\/|$)/.test(rest) ? '/mecanica-labs/mruv' + rest : '/mecanica-labs/mruv/'
+    location.replace(to + location.search + location.hash)
+  })()
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://kairi99.github.io/mecanica-labs/mruv/"></noscript>
+<style>
+  :root { color-scheme: light dark; --bg: #fff; --ink: #1d1d1f; --accent: #0071e3; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #000; --ink: #f5f5f7; --accent: #2997ff; } }
+  body { margin: 0; padding: 24px 16px; background: var(--bg); color: var(--ink); font: 17px/1.5 system-ui, sans-serif; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<p>El laboratorio de MRUV se mudó a <a href="https://kairi99.github.io/mecanica-labs/mruv/">kairi99.github.io/mecanica-labs/mruv/</a>.</p>
+<p lang="en">The MRUV lab moved to <a href="https://kairi99.github.io/mecanica-labs/mruv/">kairi99.github.io/mecanica-labs/mruv/</a>.</p>
+</body>
+</html>
